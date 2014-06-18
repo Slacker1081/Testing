@@ -1,7 +1,7 @@
 /**
  * 
  */
-
+import javax.swing.JOptionPane;
 /**
  * @author Slacker1081
  *
@@ -26,6 +26,7 @@ public class GradeBook {
 	
 	public void displayMessage()// Displays a welcome message
 	{
-		System.out.printf("Welcom to the grade book for \n%s!\n" , getCourseName());
+		String message = String.format("Welcome to the grade book for %s",getCourseName()); 
+		JOptionPane.showMessageDialog(null, message );
 	}
 }
