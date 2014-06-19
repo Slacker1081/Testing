@@ -12,6 +12,10 @@ public class GradeBookTest {
 		
 		myGradeBook.displayMessage();//display the welcome message
 		
+		int numberOfStudents = Integer.parseInt(JOptionPane.showInputDialog("How many students took the course?"));
+		
+		myGradeBook.determinClassAverage(numberOfStudents);
+		
 	}
 
 }
